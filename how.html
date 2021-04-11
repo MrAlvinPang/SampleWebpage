@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Assignment 3 forms">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3 - Alvin Pang</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+</head>
+
+<body>
+    <header>
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+            <symbol id="icon-right-arrow-svgrepo-com-copy" viewBox="0 0 32 32">
+                <path d="M22.618 15.127l-10.909-14.545c-0.482-0.643-1.394-0.773-2.036-0.291s-0.773 1.394-0.291 2.036l10.254 13.672-10.254 13.673c-0.482 0.643-0.352 1.554 0.291 2.036 0.262 0.196 0.568 0.291 0.872 0.291 0.442 0 0.879-0.201 1.165-0.582l10.909-14.546c0.388-0.517 0.388-1.228 0-1.745z"></path>
+            </symbol>
+            </defs>
+        </svg>
+
+		<div class="flex-container">
+			<a href="index.html"><img src="img/logo182.jpg" alt="logo"></a>
+			<div class="toggle-btn">
+				<svg viewBox="0 0 300 250" width="60" height="60">
+					<rect width="250" height="250" rx="120" fill="#f3d900"></rect>
+					<rect x="65" y="70" width="120" height="10"></rect>
+					<rect x="65" y="110" width="120" height="10"></rect>
+					<rect x="65" y="150" width="120" height="10"></rect>
+				</svg>
+			</div>
+		</div>
+		<nav>
+			<ul class="menu">
+				<li><a href="#">Services</a></li>
+				<li><a href="how.html">How it Works</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Blog</a></li>
+				<li class="last-nav"><a href="#">About</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <section class="steps">
+            <h1>How it works.</h1>
+            <div class="steps-container">
+                <div>
+                    <h2>Step 1</h2>
+                    <p> Tell us a little about your project and requirements</p>
+                </div>
+                
+                <div>
+                    <h2>Step 2</h2>
+                    <p>Let us craft out a plan for your specific needs.</p>
+                </div>
+        
+                <div>
+                    <h2>Step 3</h2>
+                    <p>Let us assemble a team that best supports your needs.</p>
+                </div>
+    
+                <div>
+                    <h2>Step 4</h2>
+                    <p>Build innovative solutions to advance your business.</p>
+                </div>
+            </div>                        
+        </section>
+
+        <section class="form">
+            <div class="parallax-image">
+                <h1>Project form.</h1>
+            </div>
+            <div>
+                <p>Fill your the fields below and decsribe your needs.</p>
+                <p class="required">* Required Field</p>
+            </div>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <div>
+                        <label for="fname">Name/Surname <span>*</span></label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    
+                    <div>
+                        <label for="company">Company <span>*</span></label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                   
+                    <div>
+                        <label for="telephone">Tel <span>*</span></label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div>
+                        <label for="website">Website Url</label>
+                        <input type="url" id="website" name="website">
+                    </div>
+                    
+                    <div>
+                        <label for="budget">Budget</label>
+                        <input type="number" id="budget" name="budget" min="0">
+                    </div>
+                    
+                    <div>
+                        <label for="description">Project Description</label>
+                        <textarea id="description" placeholder="In 250 words or less."></textarea>
+                    </div>
+                    
+                    <div class="submit">
+                        <label for="submit"><svg class="icon icon-right-arrow-svgrepo-com-copy"><use xlink:href="#icon-right-arrow-svgrepo-com-copy"></use></svg></label>
+                        <input type="submit" id="submit" name="submit" value="Send.">
+                    </div>
+
+                </fieldset>                
+            </form>
+        </section>
+
+        <section>
+			<img src="img/logo182.jpg" alt="logo">
+			<div>
+				<div class="links">
+					<h2>Company</h2>
+					<ul>
+						<li><a href="#">Our Story</a></li>
+						<li><a href="#">Our Team</a></li>
+						<li><a href="#">Clients</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+				</div>
+				<div class="links">
+					<h2>Services</h2>
+					<ul>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Our Talents</a></li>
+						<li><a href="#">Tour</a></li>
+					</ul>
+				</div>
+				<div class="links">
+					<h2>Get in Touch</h2>
+					<ul>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Press & Media</a></li>
+						<li><a href="#" class="last">hello@upchanges.ca</a></li>
+					</ul>
+				</div>
+			</div>			
+		</section>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2020</p>
+		<p>For Educational Purposes Only</p>
+	</footer>
+	<script src="js/main.js"></script>
+	<script defer src="svgxuse.js"></script>
+</body>
+</html>

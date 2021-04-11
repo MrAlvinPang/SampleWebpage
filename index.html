@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Assignment 3 forms">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3 - Alvin Pang</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+</head>
+
+<body>
+	<svg aria-hidden="true" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+		<symbol id="icon-checkmark" viewBox="0 0 32 32">
+		<path fill="#477663" style="fill: var(--color1, #477663)" d="M13.147 24c-0.384-0.001-0.73-0.165-0.973-0.426l-0.001-0.001-6.48-6.893c-0.224-0.238-0.361-0.56-0.361-0.913 0-0.737 0.598-1.335 1.335-1.335 0.383 0 0.729 0.162 0.973 0.421l0.001 0.001 5.493 5.853 11.213-12.267c0.246-0.305 0.62-0.498 1.040-0.498 0.736 0 1.333 0.597 1.333 1.333 0 0.373-0.153 0.71-0.399 0.952l-0 0-12.187 13.333c-0.241 0.267-0.587 0.435-0.972 0.44h-0.001z"></path>
+		</symbol>
+		<symbol id="icon-icon-designers" viewBox="0 0 32 32">
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M16 16.309v7.68"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.2704" d="M8.96 12.080l7.040 4.318"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M23.040 12.080l-7.040 4.318"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M23.040 12.080v7.805l-7.040 4.371-7.040-4.318v-7.858l6.96-4.336 7.12 4.336z"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M29.92 22.56v5.76c0 0.884-0.716 1.6-1.6 1.6v0h-5.76"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M22.56 2.080h5.76c0.884 0 1.6 0.716 1.6 1.6v0 5.76"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M2.080 9.44v-5.76c0-0.884 0.716-1.6 1.6-1.6v0h5.76"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M9.44 29.92h-5.76c-0.884 0-1.6-0.716-1.6-1.6v0-5.76"></path>
+		</symbol>
+		<symbol id="icon-icon-developers" viewBox="0 0 32 32">
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M23.2 9.12h6.56c0.884 0 1.6 0.716 1.6 1.6v0 17.28c0 0.884-0.716 1.6-1.6 1.6v0h-27.52c-0.884 0-1.6-0.716-1.6-1.6v0-17.28c0-0.884 0.716-1.6 1.6-1.6v0h6.64"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M26.085 9.115v20.49"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M5.915 9.115v20.49"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M16 9.957v7.68"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.2704" d="M8.96 5.728l7.040 4.318"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M23.040 5.728l-7.040 4.318"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M23.040 5.728v7.805l-7.040 4.371-7.040-4.318v-7.858l6.96-4.336 7.12 4.336z"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M11.84 20.96h8.32"></path>
+		</symbol>
+		<symbol id="icon-icon-project" viewBox="0 0 32 32">
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M8.062 30.72l-0.026-6.658c-2.94-2.177-4.826-5.634-4.826-9.531 0-6.531 5.295-11.826 11.826-11.826 0.001 0 0.002 0 0.003 0h-0c4.008 0 7.49 1.994 9.666 5.045"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M3.36 16.8h4.286c0.739 0.882 1.841 1.439 3.073 1.439s2.334-0.557 3.068-1.433l0.005-0.006h3.328"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M17.12 11.68h-3.326c-0.739-0.882-1.841-1.439-3.073-1.439s-2.334 0.557-3.068 1.433l-0.005 0.006h-4.288"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M25.28 20.32v4.64c0 0.884-0.716 1.6-1.6 1.6v0h-4.32v4.16"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M24.64 20v-12"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M20.48 18.080h-1.6c-0.884 0-1.6-0.716-1.6-1.6v0-4.96c0-0.884 0.716-1.6 1.6-1.6v0h1.6l4.64-1.92h4.64v12h-4.64z"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M20.48 17.76v-7.84"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M12.32 14.24c0 0.884-0.716 1.6-1.6 1.6s-1.6-0.716-1.6-1.6c0-0.884 0.716-1.6 1.6-1.6s1.6 0.716 1.6 1.6z"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M8.48 10.899v-6.419"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M12.8 2.88v7.859"></path>
+		</symbol>
+		<symbol id="icon-icon-specialist" viewBox="0 0 32 32">
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="bevel" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.28" d="M16.96 4.32c-0-2.032-1.648-3.68-3.68-3.68s-3.68 1.648-3.68 3.68c0 0.603 0.145 1.171 0.402 1.673l-0.010-0.021c-0.414-0.235-0.909-0.373-1.436-0.373-0.001 0-0.003 0-0.004 0h0c-1.76 0-3.2 1.576-3.2 3.52-0 0.009-0 0.019-0 0.029 0 0.942 0.353 1.802 0.933 2.454l-0.003-0.004c-0.204-0.050-0.439-0.079-0.681-0.080h-0.001c-2.032 0-3.68 2.006-3.68 4.48s1.648 4.48 3.68 4.48c0.245-0 0.483-0.030 0.71-0.084l-0.021 0.004c-0.577 0.649-0.93 1.509-0.93 2.451 0 0.010 0 0.021 0 0.031v-0.002c0 1.944 1.44 3.52 3.2 3.52 0.001 0 0.003 0 0.004 0 0.527 0 1.022-0.138 1.451-0.38l-0.015 0.008c-0.252 0.485-0.4 1.060-0.4 1.668 0 2.032 1.648 3.68 3.68 3.68s3.68-1.648 3.68-3.68c0-0.006 0-0.011-0-0.017v0.001c0-0.054 0-0.107 0-0.16v0-23.040c0-0.053 0-0.106 0-0.16z"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M10.762 30.282c0.666 0.666 1.586 1.078 2.602 1.078 2.033 0 3.68-1.648 3.68-3.68 0-1.016-0.412-1.936-1.078-2.602h-2.062"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M10.602 1.718c0.663-0.649 1.572-1.050 2.574-1.050 2.032 0 3.68 1.648 3.68 3.68 0 1.002-0.4 1.91-1.050 2.574l0.001-0.001h-1.779"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M16.96 15.2h-4l-5.080 4.762"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M7.195 13.864l2.797 3.966"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M9.992 26.027l1.928-2.667"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M9.992 5.998l1.368 2.162v3.2"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M24.32 16h-7.68"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M17.12 20.96h3.84l1.92 3.467"></path>
+		<path fill="none" stroke="#220728" style="stroke: var(--color2, #220728)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M17.12 11.2h3.84l1.92-3.467"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M29.92 16c0 1.414-1.146 2.56-2.56 2.56s-2.56-1.146-2.56-2.56c0-1.414 1.146-2.56 2.56-2.56s2.56 1.146 2.56 2.56z"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M26.4 27.2c0 1.414-1.146 2.56-2.56 2.56s-2.56-1.146-2.56-2.56c0-1.414 1.146-2.56 2.56-2.56s2.56 1.146 2.56 2.56z"></path>
+		<path fill="none" stroke="#f3d900" style="stroke: var(--color3, #f3d900)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.28" d="M26.4 4.8c0 1.414-1.146 2.56-2.56 2.56s-2.56-1.146-2.56-2.56c0-1.414 1.146-2.56 2.56-2.56s2.56 1.146 2.56 2.56z"></path>
+		</symbol>
+		<symbol id="icon-search-svgrepo-com" viewBox="0 0 32 32">
+			<path d="M31.597 29.708l-9.181-9.188c1.81-2.171 2.899-4.945 2.899-7.975 0-6.912-5.673-12.532-12.65-12.532s-12.664 5.627-12.664 12.539 5.673 12.532 12.65 12.532c2.964 0 5.692-1.017 7.857-2.715l9.214 9.214c0.538 0.538 1.338 0.538 1.876 0s0.538-1.338 0-1.876zM2.689 12.552c0-5.43 4.473-9.844 9.962-9.844s9.962 4.414 9.962 9.844-4.473 9.844-9.962 9.844-9.962-4.42-9.962-9.844z"></path>
+		</symbol>
+		<symbol id="icon-right-arrow-svgrepo-com-copy" viewBox="0 0 32 32">
+			<path d="M22.618 15.127l-10.909-14.545c-0.482-0.643-1.394-0.773-2.036-0.291s-0.773 1.394-0.291 2.036l10.254 13.672-10.254 13.673c-0.482 0.643-0.352 1.554 0.291 2.036 0.262 0.196 0.568 0.291 0.872 0.291 0.442 0 0.879-0.201 1.165-0.582l10.909-14.546c0.388-0.517 0.388-1.228 0-1.745z"></path>
+		</symbol>
+		</defs>
+	</svg>
+		
+	<header>
+		<div class="flex-container">
+			<a href="index.html"><img src="img/logo182.jpg" alt="logo"></a>
+			<div class="toggle-btn">
+				<svg viewBox="0 0 300 250" width="60" height="60">
+					<rect width="250" height="250" rx="120" fill="#f3d900"></rect>
+					<rect x="65" y="70" width="120" height="10"></rect>
+					<rect x="65" y="110" width="120" height="10"></rect>
+					<rect x="65" y="150" width="120" height="10"></rect>
+				</svg>
+			</div>
+		</div>
+		<nav>
+			<ul class="menu">
+				<li><a href="#">Services</a></li>
+				<li><a href="how.html">How it Works</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="search">
+			<h1>What is valuable to you?</h1>
+			<div>
+				<form action="#" method="post" role="search">
+					<label for="searchbar" class="sr-only"></label>
+					<input type="text" id="searchbar" autofocus>
+				 </form>
+				 <svg class="icon icon-search-svgrepo-com"><use xlink:href="#icon-search-svgrepo-com"></use></svg>
+			</div>		
+		</section>
+
+		<section>
+			<div class="card-intro-text">
+				<h1>Our network is here for you.</h1>
+				<p>Our core philosophy is people over process. More specifically, we have great people working together as a dream team. With this approach, we are a more flexible, fun, stimulating, creative, collaborative and successful organization.</p>
+				<div class="button">
+					<svg class="icon icon-right-arrow-svgrepo-com-copy"><use xlink:href="#icon-right-arrow-svgrepo-com-copy"></use></svg>
+					<a href="how.html">How it works</a>
+				</div>
+			</div>						
+			<div class="card-container">
+				<div class="card1">
+					<svg class="icon icon-icon-designers"><use xlink:href="#icon-icon-designers"></use></svg>
+					<h2>Designers</h2>
+					<p>Expertise ranges from UX,UI to even deck design. Comprised of illustrators, animators and more.</p>
+					<a href="#">Read more</a>
+				</div>
+				<div class="card1">
+					<svg class="icon icon-icon-developers"><use xlink:href="#icon-icon-developers"></use></svg>
+					<h2>Developers</h2>
+					<p>Seasoned software engineers, coders, and architects whose expertise range various technologies</p>
+					<a href="#">Read more</a>
+				</div>
+				<div class="card1">
+					<svg class="icon icon-icon-specialist"><use xlink:href="#icon-icon-specialist"></use></svg>
+					<h2>Specialists</h2>
+					<p>Experts in consulting, marketing, strategy and research tailored to your business needs.</p>
+					<a href="#">Read more</a>
+				</div>
+				<div class="card1">
+					<svg class="icon icon-icon-project"><use xlink:href="#icon-icon-project"></use></svg>
+					<h2>Project Managers</h2>
+					<p>Trained to work closely with all stakeholders involved to coordinate and manage projects for delivery.</p>
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h1>What we can do?</h1>
+			<div class="gallery">
+				<nav class="horizontal-content">
+					<div><img src="img/mobile110.jpg" alt="Mobile"><p>Mobile</p></div>
+					<div><img src="img/deer110.jpg" alt="Deer"><p>Graphic Design</p></div>
+					<div><img src="img/uxui110.jpg" alt="UXUI"><p>UX/UI</p></div>
+					<div><img src="img/photography110.jpg" alt="Photography"><p>Photography</p></div>
+					<div><img src="img/research110.jpg" alt="Research"><p>Research</p></div>
+					<div><img src="img/analytics110.jpg" alt="Analytics"><p>Analytics</p></div>
+					<div><img src="img/writing110.jpg" alt="Writing"><p>Content Creation</p></div>
+					<div><img src="img/time110.jpg" alt="Time"><p>Time Management</p></div>		
+				</nav>
+			</div>
+		</section>
+
+		<section>
+			<h1>When would you need us?</h1>
+			<p>A growing startup business needs everyone's good ideas, and you never know where they might come from.</p>
+			<div class="card2-container">
+				<div class="card2">
+					<img class="image1" src="img/solutions-sm275.jpg" alt="Quick Solutions">
+					<div>
+						<h2>Quick Solutions</h2>
+						<p>Provide long-term solutions that support your business' vision.</p>
+					</div>
+				</div>
+				<div class="card2">
+					<img class="image2" src="img/resources-sm275.jpg" alt="On Demand Resources">
+					<div>
+						<h2>On-Demand Resources</h2>
+						<p>Co-develop your product with you designers and developers.</p>
+					</div>				
+				</div>
+				<div class="card2">
+					<img class="image3" src="img/support-sm275.jpg" alt="Support">
+					<div>
+						<h2>Full-Time Support</h2>
+						<p>Create supporting assets that enhance your projects.</p>
+					</div>				
+				</div>
+			</div>			
+			<div class="button">
+				<svg class="icon icon-right-arrow-svgrepo-com-copy"><use xlink:href="#icon-right-arrow-svgrepo-com-copy"></use></svg>
+				<a href="how.html">Our Services</a>
+			</div>
+		</section>
+		<section class="signup">
+			<h1>Re-Energize your business upward.</h1>
+			<p>Accelerating innovation through creative talen solutions. Sign up for our newsletter.</p>
+			<div>
+				<form action="#" method="post" role="search">
+					<label for="signup" class="sr-only"></label>
+					<input type="text" id="signup" placeholder="Email">
+				 </form>
+				 <a href="#">Sign Up</a>
+			</div>	
+		</section>
+
+		<section>
+			<img src="img/logo182.jpg" alt="logo">
+			<div>
+				<div class="links">
+					<h2>Company</h2>
+					<ul>
+						<li><a href="#">Our Story</a></li>
+						<li><a href="#">Our Team</a></li>
+						<li><a href="#">Clients</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+				</div>
+				<div class="links">
+					<h2>Services</h2>
+					<ul>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Our Talents</a></li>
+						<li><a href="#">Tour</a></li>
+					</ul>
+				</div>
+				<div class="links">
+					<h2>Get in Touch</h2>
+					<ul>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Press & Media</a></li>
+						<li><a href="#">hello@upchanges.ca</a></li>
+					</ul>
+				</div>
+			</div>			
+		</section>
+
+	</main>
+	<footer>
+		<p>Copyright &copy; 2020</p>
+		<p>For Educational Purposes Only</p>
+	</footer>
+	<script src="js/main.js"></script>
+	<script defer src="svgxuse.js"></script>
+</body>
+
+</html>
